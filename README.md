@@ -1,2 +1,3 @@
 # MATLABfiles
-MATLAB and GNU Octave scripts.
+MATLAB and GNU Octave scripts
+May include Simulink files
