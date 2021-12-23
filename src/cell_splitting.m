@@ -1,0 +1,13 @@
+clc;
+n = 4;
+R = input("Enter radius of original cell(in km): ");
+Pr = input("Enter power to be received at cell boundary(in dB): ");
+Pt = 10 * log10(((10 ^ (Pr/10)) * (R ^ n)) / 0.001);
+disp("Transmission power(in dB) required by the cell is");
+disp(Pt);
+r = R/2;
+Pt2 = 10 * log10(((10 ^ (Pr/10)) * (r ^ n)) / 0.001);
+disp("Transmission power(in dB) required by the split cell of half radius is");
+disp(Pt2);
+disp("Difference in transmission power(in dB) is");
+disp(Pt - Pt2);
